@@ -9,7 +9,7 @@ a simple python script that watches a twitter/x user for recent tweets containin
 * sends matching tweets to a discord webhook  
 * uses browser cookies for login instead of api keys  
 * remembers already sent tweets to prevent duplicate notifications  
-* automatically cleans up old tracking data (30 days)  
+* automatically cleans up old tracking data (1 day)  
 * works with both tweet urls and content hashing for reliable detection  
 * handles login sessions and cookies automatically  
 
@@ -46,7 +46,7 @@ python main.py
 - subsequent runs use the saved cookies for authentication  
 - scans the user's tweets every 5 minutes (configurable)  
 - tracks sent tweets in `sent_tweets.json` to prevent duplicates  
-- automatically cleans up old entries after 30 days (by default).  
+- automatically cleans up old entries after 1 day (by default).  
 
 ## notes
 
